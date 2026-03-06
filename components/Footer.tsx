@@ -110,8 +110,8 @@ export default function Footer() {
                         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
                             {[
                                 { Icon: MapPin, text: "567, 17th A Main, 6th Block, Koramangala Layout, Bengaluru – 560095, Karnataka" },
-                                { Icon: Clock, text: "Mon – Fri: 9:00 AM – 9:00 PM" },
-                                { Icon: Mail, text: "info@fortunetechnosys.com" },
+                                { Icon: Clock, text: "Mon – Fri: 9:00 AM – 5:00 PM" },
+                                { Icon: Mail, text: "fortune.technosys@gmail.com" },
                             ].map(({ Icon, text }, i) => (
                                 <div key={i} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
                                     <Icon size={16} color="var(--primary-light)" style={{ marginTop: 2, flexShrink: 0 }} />
