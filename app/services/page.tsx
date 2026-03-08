@@ -162,11 +162,7 @@ export default function ServicesPage() {
                 <div className="container">
                     <div style={{ display: "flex", flexDirection: "column", gap: "5rem" }}>
                         {services.map((s, idx) => (
-                            <div key={s.title} style={{
-                                display: "grid",
-                                gridTemplateColumns: "1fr 1fr",
-                                gap: "4rem",
-                                alignItems: "center",
+                            <div key={s.title} className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center" style={{
                                 direction: idx % 2 === 1 ? "rtl" : "ltr"
                             }}>
                                 {/* Content */}

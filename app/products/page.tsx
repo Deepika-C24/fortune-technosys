@@ -84,7 +84,7 @@ export default function ProductsPage() {
             {/* Product overview */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
                         <div>
                             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
                                 <div style={{ fontSize: "3rem" }}>🧮</div>
@@ -135,7 +135,7 @@ export default function ProductsPage() {
                                 { label: "Users", value: "..." },
                                 { label: "Support", value: "..." },
                                 { label: "Customization", value: "..." },
-                                
+
                             ].map((row) => (
                                 <div key={row.label} style={{
                                     display: "flex", justifyContent: "space-between",
@@ -160,7 +160,7 @@ export default function ProductsPage() {
                         <span className="section-badge">Capabilities</span>
                         <h2 className="section-title">Everything Your Business Needs</h2>
                     </div>
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {tallyFeatures.map((f) => (
                             <div key={f.category} className="card">
                                 <div style={{ fontWeight: 800, color: "var(--primary)", marginBottom: "1rem", fontSize: "0.95rem" }}>{f.category}</div>
@@ -186,7 +186,7 @@ export default function ProductsPage() {
                         <h2 className="section-title">Choose the Right Plan</h2>
                         <p className="section-subtitle">Contact us for exact pricing — we customize quotes based on your requirements.</p>
                     </div>
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem", maxWidth: 900, margin: "0 auto" }}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[900px] mx-auto">
                         {plans.map((p) => (
                             <div key={p.name} style={{
                                 background: p.popular ? "linear-gradient(135deg, var(--primary), #5C2560)" : "white",

@@ -59,7 +59,7 @@ export default function AboutPage() {
             {/* Quick Facts */}
             <section className="section" style={{ paddingBottom: "2rem" }}>
                 <div className="container">
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.5rem" }}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             { Icon: Calendar, label: "Founded", value: "2012" },
                             { Icon: MapPin, label: "Location", value: "Koramangala, Bengaluru" },
@@ -83,7 +83,7 @@ export default function AboutPage() {
             {/* Story */}
             <section className="section" style={{ paddingTop: "2rem" }}>
                 <div className="container">
-                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
                         <div>
                             <span className="section-badge">Our Story</span>
                             <h2 className="section-title" style={{ textAlign: "left" }}>
@@ -161,7 +161,7 @@ export default function AboutPage() {
                         <span className="section-badge">Our Principles</span>
                         <h2 className="section-title">Mission, Vision & Values</h2>
                     </div>
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {values.map((v) => (
                             <div key={v.title} className="card" style={{ textAlign: "center", padding: "2.5rem 2rem" }}>
                                 <div className="icon-box" style={{ margin: "0 auto 1.5rem" }}>

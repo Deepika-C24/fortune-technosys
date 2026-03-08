@@ -89,7 +89,7 @@ export default function ContactPage() {
             {/* Contact body */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: "4rem", alignItems: "start" }}>
+                    <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-16 items-start">
                         {/* Info */}
                         <div>
                             <span className="section-badge">Get In Touch</span>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} noValidate>
-                                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div className="form-group">
                                             <label className="form-label" htmlFor="name">Full Name *</label>
                                             <input
@@ -168,7 +168,7 @@ export default function ContactPage() {
                                         </div>
                                     </div>
 
-                                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div className="form-group">
                                             <label className="form-label" htmlFor="phone">Phone Number</label>
                                             <input
