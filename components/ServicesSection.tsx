@@ -66,7 +66,7 @@ export default function ServicesSection() {
                     </p>
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "1.5rem" }}>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.map((s) => (
                         <div key={s.title} className="card">
                             <div className="icon-box">

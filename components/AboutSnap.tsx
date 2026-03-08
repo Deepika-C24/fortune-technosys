@@ -11,7 +11,7 @@ export default function AboutSnap() {
     return (
         <section className="section">
             <div className="container">
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }} className="two-col-grid">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
                     {/* Left visual */}
                     <div style={{ position: "relative" }}>
                         <div style={{
@@ -60,20 +60,9 @@ export default function AboutSnap() {
                         </div>
 
                         {/* GST badge */}
-                        <div style={{
-                            position: "absolute",
-                            bottom: -20,
-                            right: 30,
-                            background: "white",
-                            border: "1px solid var(--primary-100)",
-                            borderRadius: "0.75rem",
-                            padding: "0.75rem 1.25rem",
-                            boxShadow: "0 8px 30px rgba(138,62,138,0.15)",
-                            fontSize: "0.8rem",
-                            color: "var(--gray-600)"
-                        }}>
-                            <div style={{ fontWeight: 700, color: "var(--primary)", fontSize: "0.7rem", letterSpacing: "0.06em", marginBottom: "0.15rem" }}>GST VERIFIED</div>
-                            <div style={{ fontFamily: "monospace", fontWeight: 600 }}>29AGTPA7742A1ZD</div>
+                        <div className="absolute -bottom-5 right-5 lg:right-8 bg-white border border-[var(--primary-100)] rounded-xl py-3 px-5 shadow-[0_8px_30px_rgba(138,62,138,0.15)] text-xs lg:text-sm text-[var(--gray-600)]">
+                            <div className="font-bold text-[var(--primary)] text-[10px] lg:text-xs tracking-wider mb-0.5">GST VERIFIED</div>
+                            <div className="font-mono font-semibold">29AGTPA7742A1ZD</div>
                         </div>
                     </div>
 
@@ -90,7 +79,7 @@ export default function AboutSnap() {
                         </p>
                         <p style={{ color: "var(--gray-600)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
                             {/* Led by <strong style={{ color: "var(--gray-800)" }}>Chandrashekhar AK</strong>, our team of experts brings years of hands-on experience in Tally ERP, ERP implementations, payroll processing, and custom software development. */}
-                            Led by Chandrashekhar AK...                            
+                            Led by Chandrashekhar AK...
                         </p>
 
                         <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", marginBottom: "2.5rem" }}>

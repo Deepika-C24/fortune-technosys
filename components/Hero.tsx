@@ -36,7 +36,7 @@ export default function Hero() {
                         opacity: mounted ? 1 : 0,
                         transform: mounted ? "translateY(0)" : "translateY(20px)",
                         transition: "all 0.7s ease 0.1s"
-                    }}>
+                    }} className="text-3xl md:text-5xl lg:text-7xl font-black text-white leading-tight mb-6">
                         Empowering Businesses with{" "}
                         <span style={{
                             background: "linear-gradient(90deg, #F9D4F9, #FFFFFF)",
@@ -105,16 +105,9 @@ export default function Hero() {
 
                 {/* Floating cards */}
                 <div style={{
-                    position: "absolute",
-                    right: "0",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "1rem",
                     opacity: mounted ? 1 : 0,
                     transition: "opacity 0.7s ease 0.5s"
-                }} className="hero-float-cards">
+                }} className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 flex-col gap-4">
                     {[
                         { icon: <Zap size={20} />, title: "Tally ERP9", sub: "Authorized Partner" },
                         { icon: <CheckCircle size={20} />, title: "13+ Years", sub: "Trusted Experience" },

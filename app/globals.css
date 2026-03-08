@@ -360,14 +360,8 @@ body {
   }
 }
 
-/* ── Two-column to single-column on mobile ─────────── */
+/* ── Mobile Nav ─────────── */
 @media (max-width: 900px) {
-  .two-col-grid {
-    grid-template-columns: 1fr !important;
-    direction: ltr !important;
-    gap: 2.5rem !important;
-  }
-
   .desktop-nav {
     display: none !important;
   }

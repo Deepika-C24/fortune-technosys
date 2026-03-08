@@ -12,7 +12,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="container">
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "3rem", marginBottom: "3rem" }}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div>
                         <div style={{ display: "flex", alignItems: "center", gap: "0.65rem", marginBottom: "1.25rem" }}>
@@ -123,15 +123,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom bar */}
-                <div style={{
-                    borderTop: "1px solid rgba(255,255,255,0.1)",
-                    paddingTop: "1.75rem",
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "1rem",
-                    justifyContent: "space-between",
-                    alignItems: "center"
-                }}>
+                <div className="border-t border-white/10 pt-7 flex flex-col md:flex-row gap-4 justify-between items-center text-center md:text-left">
                     <p style={{ fontSize: "0.85rem" }}>
                         © {new Date().getFullYear()} Fortune Technosys. All rights reserved. | GST: 29AGTPA7742A1ZD
                     </p>

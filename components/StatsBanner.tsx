@@ -41,7 +41,7 @@ export default function StatsBanner() {
             padding: "4rem 0"
         }}>
             <div className="container">
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1rem" }}>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {stats.map((s) => (
                         <div key={s.label} className="stat-card">
                             <Counter target={s.value} suffix={s.suffix} />

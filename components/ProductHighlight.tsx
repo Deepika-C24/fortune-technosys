@@ -14,7 +14,7 @@ export default function ProductHighlight() {
     return (
         <section className="section">
             <div className="container">
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }} className="two-col-grid">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
                     {/* Content */}
                     <div>
                         <span className="section-badge">Featured Product</span>
